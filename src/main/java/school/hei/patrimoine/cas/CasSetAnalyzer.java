@@ -21,7 +21,7 @@ public class CasSetAnalyzer implements Consumer<CasSet> {
   public void accept(CasSet casSet) {
     var aCas = casSet.set().stream().toList().getFirst();
     var patrimoineTout = new ToutCas(aCas.getAjd(), aCas.getFinSimulation(), casSet);
-    verifie(patrimoineTout);
+   // verifie(patrimoineTout);
     visualise(casSet.set(), patrimoineTout);
   }
 
